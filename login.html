@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Login Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    
+    <div class="container">
+        <div class="login">
+        <h3 class="title">Login</h3>
+            <div class="text-input">
+                <i class="ri-user-fill"></i>
+                <input type="text" id="username" placeholder="Username">
+            </div>
+            <div class="text-input">
+                <i class="ri-lock-fill"></i>
+                <input type="password" id="password" placeholder="Password">
+            </div>
+            <button class="login-btn" onclick="validarLogin()">LOGIN</button>
+            <a href="recovery.html" id="forgotPassword">Esqueci minha senha</a>
+            <div class="create">
+                <a href="#">Create account</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        function validarLogin() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+ 
+            if (username.trim() === "" || password.trim() === "") {
+                alert("Por favor, preencha todos os campos obrigatórios.");
+                return false;
+            }
+ 
+            // Aqui você pode adicionar a lógica para o login
+            // Por exemplo, enviar os dados para um servidor para autenticação
+            // Ou apenas mostrar uma mensagem de sucesso
+            alert("Login successful!");
+        }
+    </script>
+</body>
+</html>
+
+                    
